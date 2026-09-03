@@ -1,92 +1,88 @@
-export default function Hero() {
-  return (
-    <section className="min-h-[85vh] pt-24 flex items-center px-8 lg:px-20">
-
-      <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
-
-        {/* Left */}
-        <div>
-
+export default function Hero() { 
+  return ( 
+    <section className="flex min-h-[72vh] items-center px-8 pt-24 pb-12 lg:px-20"> 
+ 
+      <div className="mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-2"> 
+ 
+        {/* Left */} 
+        <div> 
+ 
           <p className="text-blue-600 font-medium">
-          Full Stack Developer | React.js | Next.js
-6+ years building production applications
-          </p>
-
-          <h1 className="text-4xl lg:text-5xl font-bold mt-4 leading-tight">
-            Building scalable web applications with
+            Full Stack Developer | 6+ Years Experience | React.js • Next.js • Node.js
+          </p> 
+ 
+          <h1 className="text-4xl lg:text-5xl font-bold mt-4 leading-tight"> 
+            I build 
             <span className="text-blue-600">
-              {" "}React & Next.js & Node.js
-            </span>
-          </h1>
-
-
-          <p className="mt-6 text-gray-600 text-lg leading-8">
-            I'm Suganthi S, a Full Stack Developer with 6+ years
-            of experience building responsive websites,
-            web applications, WordPress solutions, and
-            production-ready systems.
-          </p>
-
-
-          <div className="flex gap-4 mt-8">
-
-            <button className="bg-black text-white px-6 py-3 rounded-lg">
-              View Projects
-            </button>
-
-            <button className="border px-6 py-3 rounded-lg">
+              {" "}scalable web platforms
+            </span>{" "} 
+            that help businesses grow
+          </h1> 
+ 
+          <p className="mt-6 text-gray-600 text-lg leading-8"> 
+            I&apos;m Suganthi S, a Full Stack Developer with 6+ years of experience 
+            building SaaS platforms, web applications, and production-ready 
+            systems using modern technologies.
+          </p> 
+ 
+          <div className="flex gap-4 mt-8"> 
+ 
+            <button className="bg-black text-white px-6 py-3 rounded-lg"> 
+              View My Work
+            </button> 
+ 
+            <button className="border px-6 py-3 rounded-lg"> 
               Download Resume
-            </button>
-
-          </div>
-
-
-          <div className="flex flex-wrap gap-3 mt-8">
-
+            </button> 
+ 
+          </div> 
+ 
+          <div className="flex flex-wrap gap-3 mt-8"> 
+ 
             {[
-              "React.js",
-              "Next.js",
-              "TypeScript",
-              "Node.js",
+              "React.js", 
+              "Next.js", 
+              "TypeScript", 
+              "Node.js", 
               "AWS"
-            ].map((skill) => (
-              <span
-                key={skill}
+            ].map((skill) => ( 
+              <span 
+                key={skill} 
                 className="border px-4 py-2 rounded-full text-sm"
-              >
+              > 
                 {skill}
-              </span>
-            ))}
-
-          </div>
-
-        </div>
-
-
-        {/* Right */}
-        <div className="bg-gray-100 rounded-2xl p-8">
-
-          <pre className="text-sm">
+              </span> 
+            ))} 
+ 
+          </div> 
+ 
+        </div> 
+ 
+ 
+        {/* Right */} 
+       <div className="bg-gray-100 rounded-2xl p-8">
+  <pre className="text-sm leading-6">
 {`const developer = {
   name: "Suganthi S",
   role: "Full Stack Developer",
   experience: "6+ years",
-  expertise: [
+  builds: [
+    "SaaS Platforms",
+    "Web Applications",
+    "Production Systems"
+  ],
+  stack: [
     "React",
     "Next.js",
     "Node.js",
     "AWS"
-  ],
-  focus: "Scalable web applications"
   ]
 }`}
-          </pre>
-
-        </div>
-
-
-      </div>
-
-    </section>
-  );
+  </pre>
+</div>
+ 
+      </div> 
+ 
+    </section> 
+  ); 
 }

@@ -1,15 +1,13 @@
 const skills = [
   {
-    title: "Frontend",
+    title: "Full Stack Development",
     items: [
       "React.js",
       "Next.js",
-      "Redux",
-      "JavaScript",
+      "Node.js",
+      "REST APIs",
       "TypeScript",
-      "HTML5",
-      "CSS3",
-      "Tailwind CSS",
+      "Prisma ORM",
     ],
   },
   {
@@ -17,10 +15,10 @@ const skills = [
     items: [
       "Node.js",
       "Express.js",
-      "Prisma ORM",
-      "REST APIs",
       "PHP",
       "CodeIgniter",
+      "API Integration",
+      "Authentication",
     ],
   },
   {
@@ -31,6 +29,19 @@ const skills = [
       "Amazon RDS",
       "AWS EC2",
       "AWS S3",
+      "Deployment",
+    ],
+  },
+  {
+    title: "Frontend",
+    items: [
+      "React.js",
+      "Next.js",
+      "Redux",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
     ],
   },
   {
@@ -41,13 +52,14 @@ const skills = [
       "Git",
       "GitHub",
       "Postman",
+      "Figma",
     ],
   },
 ];
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 px-8 lg:px-20">
+    <section id="skills" className="px-8 py-16 lg:px-20">
 
       <div className="max-w-6xl mx-auto">
 
@@ -60,24 +72,24 @@ export default function Skills() {
         </h2>
 
 
-        <div className="grid md:grid-cols-2 gap-6 mt-10">
+        <div className="grid gap-6 mt-10 sm:grid-cols-2 xl:grid-cols-3">
 
           {skills.map((skill) => (
             <div
               key={skill.title}
-              className="border rounded-2xl p-6"
+              className="h-full rounded-2xl border border-black/10 bg-white p-6"
             >
 
-              <h3 className="text-xl font-semibold">
+              <h3 className="text-lg font-semibold">
                 {skill.title}
               </h3>
 
-              <div className="flex flex-wrap gap-3 mt-5">
+              <div className="mt-5 flex flex-wrap gap-2.5">
 
                 {skill.items.map((item) => (
                   <span
                     key={item}
-                    className="px-4 py-2 rounded-full border text-sm"
+                    className="rounded-full border border-black/10 px-3 py-1.5 text-sm"
                   >
                     {item}
                   </span>

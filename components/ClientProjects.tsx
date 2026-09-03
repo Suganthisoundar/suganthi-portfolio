@@ -1,26 +1,35 @@
 import Image from "next/image";
 
-
 const websites = [
   {
     name: "MoneyPechu",
-    category: "Business Website",
+    type: "Business Website",
     image: "/projects/portfolio-17.png",
   },
   {
     name: "Aionion Global",
-    category: "Business Website",
+    type: "Business Website",
     image: "/projects/portfolio-18.png",
   },
   {
     name: "Volkswagen Chennai",
-    category: "Business Website",
+    type: "Business Website",
     image: "/projects/portfolio-4.png",
   },
   {
     name: "Lalithaa Jewellery",
-    category: "E-Commerce Website",
+    type: "E-Commerce Website",
     image: "/projects/portfolio-5.png",
+  },
+  {
+    name: "Aionion Capital",
+    type: "Business Website",
+    image: "/projects/portfolio-19.png",
+  },
+  {
+    name: "Savithri Gorakshana Samithi",
+    type: "Business Website",
+    image: "/projects/portfolio-20.png",
   },
 ];
 
@@ -53,9 +62,11 @@ export default function ClientProjects() {
               "
             >
 
-              <img
+              <Image
                 src={site.image}
                 alt={site.name}
+                width={600}
+                height={384}
                 className="w-full h-48 object-cover"
               />
 
@@ -67,7 +78,7 @@ export default function ClientProjects() {
                 </h3>
 
                 <p className="text-gray-600 text-sm mt-2">
-                  {site.category}
+                  {site.type}
                 </p>
 
               </div>

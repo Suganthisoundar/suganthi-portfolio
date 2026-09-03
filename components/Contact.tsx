@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 px-8 lg:px-20">
+    <section id="contact" className="px-8 py-16 lg:px-20">
 
       <div className="max-w-5xl mx-auto text-center">
 
@@ -9,7 +9,7 @@ export default function Contact() {
         </p>
 
         <h2 className="text-3xl font-bold mt-3">
-          Let's Work Together
+          Let&apos;s Work Together
         </h2>
 
         <p className="text-gray-600 mt-5 max-w-2xl mx-auto">
