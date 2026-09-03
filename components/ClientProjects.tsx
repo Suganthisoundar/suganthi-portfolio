@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const websites = [
   {
@@ -39,13 +40,15 @@ export default function ClientProjects() {
 
       <div className="max-w-6xl mx-auto">
 
-        <p className="text-blue-600 text-sm font-medium">
-          CLIENT WORK
-        </p>
+        <div className="text-center">
+          <p className="text-blue-600 text-sm font-medium">
+            CLIENT WORK
+          </p>
 
-        <h2 className="text-3xl font-bold mt-3">
-          Website Projects Delivered
-        </h2>
+          <h2 className="text-3xl font-bold mt-3">
+            Website Projects Delivered
+          </h2>
+        </div>
 
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
@@ -57,6 +60,7 @@ export default function ClientProjects() {
                 border
                 rounded-2xl
                 overflow-hidden
+                bg-white
                 hover:shadow-lg
                 transition
               "
@@ -69,7 +73,6 @@ export default function ClientProjects() {
                 height={384}
                 className="w-full h-48 object-cover"
               />
-
 
               <div className="p-5">
 
@@ -87,6 +90,28 @@ export default function ClientProjects() {
           ))}
 
         </div>
+
+
+        {/* View All Projects Button */}
+        <div className="flex justify-center mt-12">
+
+          <Link
+            href="/projects"
+            className="
+              bg-black
+              text-white
+              px-6
+              py-3
+              rounded-lg
+              hover:bg-gray-800
+              transition
+            "
+          >
+            View All Projects
+          </Link>
+
+        </div>
+
 
       </div>
 

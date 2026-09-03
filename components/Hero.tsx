@@ -25,17 +25,24 @@ export default function Hero() {
             systems using modern technologies.
           </p> 
  
-          <div className="flex gap-4 mt-8"> 
- 
-            <button className="bg-black text-white px-6 py-3 rounded-lg"> 
-              View My Work
-            </button> 
- 
-            <button className="border px-6 py-3 rounded-lg"> 
-              Download Resume
-            </button> 
- 
-          </div> 
+   <div className="flex gap-4 mt-8">
+
+  <a
+    href="#projects"
+    className="bg-black text-white px-6 py-3 rounded-lg"
+  >
+    View Projects
+  </a>
+
+  <a
+    href="/resume.pdf"
+    download
+    className="border px-6 py-3 rounded-lg"
+  >
+    Download Resume
+  </a>
+
+</div>
  
           <div className="flex flex-wrap gap-3 mt-8"> 
  
