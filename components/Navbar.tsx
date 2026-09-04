@@ -1,32 +1,38 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
-    <header className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md z-50">
+    <header className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md">
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-8 py-5">
 
-        <h1 className="text-xl font-bold">
+        <Link href="/" className="text-xl font-bold">
           Suganthi
-        </h1>
+        </Link>
 
         <div className="hidden md:flex gap-8 text-sm">
-          <a href="#about" className="hover:text-blue-600">
+          <Link href="/#about" className="hover:text-blue-600">
             About
-          </a>
+          </Link>
 
-          <a href="#skills" className="hover:text-blue-600">
+          <Link href="/#skills" className="hover:text-blue-600">
             Skills
-          </a>
+          </Link>
 
-          <a href="#experience" className="hover:text-blue-600">
+          <Link href="/#experience" className="hover:text-blue-600">
             Experience
-          </a>
+          </Link>
 
-          <a href="#projects" className="hover:text-blue-600">
+          <Link href="/#projects" className="hover:text-blue-600">
             Projects
-          </a>
+          </Link>
 
-          <a href="#contact" className="hover:text-blue-600">
+          <Link href="/projects" className="hover:text-blue-600">
+            Client Work
+          </Link>
+
+          <Link href="/#contact" className="hover:text-blue-600">
             Contact
-          </a>
+          </Link>
         </div>
 
       </nav>

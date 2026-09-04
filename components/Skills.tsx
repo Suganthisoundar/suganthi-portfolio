@@ -26,6 +26,7 @@ const skills = [
     items: [
       "PostgreSQL",
       "MySQL",
+      "MongoDB",
       "Amazon RDS",
       "AWS EC2",
       "AWS S3",

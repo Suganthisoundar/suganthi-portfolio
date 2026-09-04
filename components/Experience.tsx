@@ -6,7 +6,7 @@ const experiences = [
     points: [
       "Developed full-stack web applications using React.js, Next.js, Node.js, and REST APIs.",
       "Built reusable UI components and responsive interfaces.",
-      "Integrated APIs and worked with MySQL, PostgreSQL, and Prisma ORM.",
+      "Integrated APIs and worked with MongoDB, MySQL, PostgreSQL, and Prisma ORM.",
       "Deployed and supported applications using AWS services.",
     ],
   },
