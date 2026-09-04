@@ -71,7 +71,7 @@ export default function ClientProjects() {
                 alt={site.name}
                 width={600}
                 height={384}
-                className="w-full h-48 object-cover"
+                className="w-full h-auto object-contain"
               />
 
               <div className="p-5">
