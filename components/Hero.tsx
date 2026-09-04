@@ -35,7 +35,7 @@ export default function Hero() {
   </a>
 
   <a
-    href="/resume.pdf"
+    href="/suganthi-resume.pdf"
     download
     className="border px-6 py-3 rounded-lg"
   >
