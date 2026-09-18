@@ -6,31 +6,37 @@ const websites = [
     name: "MoneyPechu",
     type: "Business Website",
     image: "/projects/portfolio-17.png",
+    link: "https://moneypechu.com/",
   },
   {
     name: "Aionion Global",
     type: "Business Website",
     image: "/projects/portfolio-18.png",
+    link: "https://www.aionionglobal.com/",
   },
   {
     name: "Volkswagen Chennai",
     type: "Business Website",
     image: "/projects/portfolio-4.png",
+    link: "https://volkswagenchennai.in/",
   },
   {
     name: "Lalithaa Jewellery",
     type: "E-Commerce Website",
     image: "/projects/portfolio-5.png",
+    link: "https://www.lalithaajewellery.com/",
   },
   {
     name: "Aionion Capital",
     type: "Business Website",
     image: "/projects/portfolio-19.png",
+    link: "https://www.aionioncapital.com/",
   },
   {
     name: "Savithri Gorakshana Samithi",
     type: "Business Website",
     image: "/projects/portfolio-20.png",
+    link: "https://savithrigorakshnasamithi.in/",
   },
 ];
 
@@ -83,6 +89,15 @@ export default function ClientProjects() {
                 <p className="text-gray-600 text-sm mt-2">
                   {site.type}
                 </p>
+
+                <a
+                  href={site.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-3 text-blue-600 font-medium"
+                >
+                  Visit Website →
+                </a>
 
               </div>
 
